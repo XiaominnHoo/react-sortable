@@ -2,7 +2,7 @@
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import SortableJS from 'sortablejs';
+import SortableJS from '@msfe/sortablejs';
 
 const store = {
     nextSibling: null,

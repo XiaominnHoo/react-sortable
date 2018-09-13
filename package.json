@@ -1,5 +1,5 @@
 {
-  "name": "react-sortablejs",
+  "name": "@msfe/react-sortablejs",
   "version": "1.3.6",
   "description": "A React component built on top of Sortable (https://github.com/RubaXa/Sortable).",
   "main": "lib/index.js",
@@ -19,10 +19,6 @@
   "pre-commit": [
     "precommit-check"
   ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/cheton/react-sortable.git"
-  },
   "author": "Cheton Wu <cheton@gmail.com>",
   "license": "MIT",
   "bugs": {
@@ -66,7 +62,7 @@
     "nib": "^1.1.2",
     "react": ">=15.0.0",
     "react-dom": ">=15.0.0",
-    "sortablejs": "^1.6.1",
+    "@msfe/sortablejs": "^1.6.1",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.1",
     "tap": "^10.3.2",
