@@ -562,7 +562,8 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;/**!
 		_disableDelayedDrag: function () {
 			var ownerDocument = this.el.ownerDocument;
 
-			clearTimeout(this._dragStartTimer);
+			// 注释下面这行代码是因为在【b端 appvivo y83手机】无法拖动
+			// clearTimeout(this._dragStartTimer);
 			_off(ownerDocument, 'mouseup', this._disableDelayedDrag);
 			_off(ownerDocument, 'touchend', this._disableDelayedDrag);
 			_off(ownerDocument, 'touchcancel', this._disableDelayedDrag);
@@ -1634,7 +1635,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;/**!
 
 
 	// Export
-	Sortable.version = '1.7.0';
+	Sortable.version = '1.7.1';
 	return Sortable;
 });
 
@@ -26551,4 +26552,4 @@ _reactDom2.default.render(_react2.default.createElement(App, null), document.get
 /***/ })
 
 /******/ });
-//# sourceMappingURL=bundle.js.map?60e9e404a0364cbe5e5f
+//# sourceMappingURL=bundle.js.map?a9b2735c7599f8e0d74b

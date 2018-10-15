@@ -1,4 +1,4 @@
-/*! @msfe/react-sortablejs v1.3.6 | (c) 2018 Cheton Wu <cheton@gmail.com> | MIT | https://github.com/cheton/react-sortable */
+/*! @msfe/react-sortablejs v1.3.7 | (c) 2018 Cheton Wu <cheton@gmail.com> | MIT | https://github.com/cheton/react-sortable */
 (function webpackUniversalModuleDefinition(root, factory) {
 	if(typeof exports === 'object' && typeof module === 'object')
 		module.exports = factory(require("react"), require("react-dom"));
@@ -957,7 +957,8 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;/**!
 		_disableDelayedDrag: function () {
 			var ownerDocument = this.el.ownerDocument;
 
-			clearTimeout(this._dragStartTimer);
+			// 注释下面这行代码是因为在【b端 appvivo y83手机】无法拖动
+			// clearTimeout(this._dragStartTimer);
 			_off(ownerDocument, 'mouseup', this._disableDelayedDrag);
 			_off(ownerDocument, 'touchend', this._disableDelayedDrag);
 			_off(ownerDocument, 'touchcancel', this._disableDelayedDrag);
@@ -2029,7 +2030,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;/**!
 
 
 	// Export
-	Sortable.version = '1.7.0';
+	Sortable.version = '1.7.1';
 	return Sortable;
 });
 
