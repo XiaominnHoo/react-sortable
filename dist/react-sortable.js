@@ -1,4 +1,4 @@
-/*! @msfe/react-sortablejs v1.3.8 | (c) 2018 Cheton Wu <cheton@gmail.com> | MIT | https://github.com/cheton/react-sortable */
+/*! @msfe/react-sortablejs v1.4.0 | (c) 2018 Cheton Wu <cheton@gmail.com> | MIT | https://github.com/cheton/react-sortable */
 (function webpackUniversalModuleDefinition(root, factory) {
 	if(typeof exports === 'object' && typeof module === 'object')
 		module.exports = factory(require("react"), require("react-dom"));
